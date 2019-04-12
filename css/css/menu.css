@@ -1,0 +1,231 @@
+.main-menu {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .main-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.main-menu .header-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-menu .header-block {
+    max-width: 480px;
+    display: flex;
+  }
+}
+.main-menu .header-block .header-left {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .main-menu .header-block .header-left {
+    margin-left: 40px;
+    padding-left: 50px;
+  }
+}
+.main-menu .header-block .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+@media screen and (max-width: 800px) {
+  .main-menu .header-block .header-right {
+    display: none;
+  }
+}
+.main-menu .header-block .header-right ul {
+  display: flex;
+  position: relative;
+  margin: 0;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul {
+    padding-left: 0;
+    margin-right: -10px;
+  }
+}
+.main-menu .header-block .header-right ul li {
+  list-style-type: none;
+  letter-spacing: 0.2px;
+  padding: 31px 15px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul li {
+    padding: 30px 8px;
+  }
+}
+.main-menu .header-block .header-right ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.main-menu .header-block .header-right ul .li-cabinets:hover .sub-menu--active, .main-menu .header-block .header-right ul .li-about:hover .sub-menu--active, .main-menu .header-block .header-right ul .li-dealers:hover .sub-menu--active, .main-menu .header-block .header-right ul .li-inspiration:hover .sub-menu--active {
+  visibility: visible;
+  transform: translateY(0) scale(1) rotateX(0);
+  transition: all 0.5s;
+  opacity: 1;
+}
+.main-menu .header-block .header-right ul .li-cabinets .sub-menu--active, .main-menu .header-block .header-right ul .li-about .sub-menu--active, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active {
+  width: 150px;
+  height: 100px;
+  border: 1px solid darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 200;
+  background: #ffffff;
+  top: 84%;
+  left: 6%;
+  transform: translateY(100px) scale(0.5) rotateX(180deg);
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-cabinets .sub-menu--active, .main-menu .header-block .header-right ul .li-about .sub-menu--active, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active {
+    top: 83%;
+    left: -3%;
+  }
+}
+.main-menu .header-block .header-right ul .li-cabinets .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-cabinets {
+  padding: 0 0 4px 0;
+  margin-left: -15px;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-cabinets .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-cabinets, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-cabinets {
+    margin-left: 15px;
+  }
+}
+.main-menu .header-block .header-right ul .li-cabinets .sub-menu--active .text-cabinets:hover, .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-cabinets:hover, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-cabinets:hover, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-cabinets:hover {
+  text-decoration: underline;
+}
+.main-menu .header-block .header-right ul .li-cabinets .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-cabinets-1 {
+  margin: 0 0 -17px -15px;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-cabinets .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-cabinets-1, .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-cabinets-1 {
+    margin-left: 15px;
+  }
+}
+.main-menu .header-block .header-right ul .li-inspiration .sub-menu--active {
+  top: 84%;
+  left: 25%;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active {
+    top: 83%;
+    left: 19%;
+  }
+}
+.main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-inspiration {
+  padding: 0 0 4px 0;
+  margin-left: -15px;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-inspiration {
+    margin-left: 15px;
+  }
+}
+.main-menu .header-block .header-right ul .li-inspiration .sub-menu--active .text-inspiration:hover {
+  text-decoration: underline;
+}
+.main-menu .header-block .header-right ul .li-dealers .sub-menu--active {
+  top: 84%;
+  left: 45%;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-dealers .sub-menu--active {
+    top: 83%;
+    left: 41%;
+  }
+}
+.main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-dealers {
+  padding: 0 0 4px 0;
+  margin-left: -15px;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-dealers {
+    margin-left: 15px;
+  }
+}
+.main-menu .header-block .header-right ul .li-dealers .sub-menu--active .text-dealers:hover {
+  text-decoration: underline;
+}
+.main-menu .header-block .header-right ul .li-about .sub-menu--active {
+  height: 170px;
+  top: 84%;
+  left: 73%;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-about .sub-menu--active {
+    top: 83%;
+    left: 71%;
+  }
+}
+.main-menu .header-block .header-right ul .li-about .sub-menu--active .text-about {
+  padding: 0 0 4px 0;
+  margin-left: -10px;
+}
+@media screen and (max-width: 1000px) {
+  .main-menu .header-block .header-right ul .li-about .sub-menu--active .text-about {
+    margin-left: 20px;
+  }
+}
+.main-menu .header-block .header-right ul .li-about .sub-menu--active .text-about:hover {
+  text-decoration: underline;
+}
+.main-menu .header-block .header-right ul .menu-inspiration {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+.main-menu .header-block .header-right ul .menu-dealers {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+.main-menu .header-block .header-right ul .menu-about {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+.main-menu .last-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 800px) {
+  .main-menu .last-child {
+    visibility: hidden;
+  }
+}
+.main-menu .last-child a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*# sourceMappingURL=menu.css.map */

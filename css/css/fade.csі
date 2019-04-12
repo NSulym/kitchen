@@ -1,0 +1,112 @@
+.fade .site-slick .jet-slider-item {
+  position: relative;
+}
+.fade .site-slick .jet-slider-item img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .fade .site-slick .jet-slider-item img {
+    width: 1600px;
+    height: 700px;
+  }
+}
+.fade .site-slick .jet-slider-item .slick-text {
+  margin: auto;
+  top: 30%;
+  left: 200px;
+  position: absolute;
+  white-space: nowrap;
+  color: #ffffff;
+  font-family: "Lora", serif;
+}
+@media screen and (max-width: 800px) {
+  .fade .site-slick .jet-slider-item .slick-text {
+    left: 4%;
+  }
+}
+.fade .site-slick .jet-slider-item .slick-text-top {
+  font-size: 74px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1500px) {
+  .fade .site-slick .jet-slider-item .slick-text-top {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fade .site-slick .jet-slider-item .slick-text-top {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .fade .site-slick .jet-slider-item .slick-text-top {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+.fade .site-slick .jet-slider-item .slick-text-top .span-text {
+  font-style: normal;
+}
+.fade .site-slick .jet-slider-item .slick-text-bottom {
+  font-style: italic;
+  font-size: 36px;
+}
+@media screen and (max-width: 1500px) {
+  .fade .site-slick .jet-slider-item .slick-text-bottom {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fade .site-slick .jet-slider-item .slick-text-bottom {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .fade .site-slick .jet-slider-item .slick-text-bottom {
+    font-size: 20px;
+  }
+}
+.fade .site-slick .jet-slider-item .slick-text-black {
+  color: #000000;
+}
+
+.slick-dots {
+  width: 85px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-active {
+  background: #000000;
+}
+
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02 {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+#slick-slide-control00:hover,
+#slick-slide-control01:hover,
+#slick-slide-control02:hover {
+  background: #000000;
+}
+
+.slick-dots li button {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=fade.cs%D1%96.map */

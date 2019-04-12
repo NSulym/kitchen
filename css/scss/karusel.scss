@@ -1,0 +1,140 @@
+.karusel{
+  min-height: 680px;
+  display: flex;
+  align-items: flex-end;
+  @media screen and (max-width: 900px) {
+    min-height: 780px;
+  }
+  .kar{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    position: relative;
+    @media screen and (max-width: 900px) {
+      min-height: 600px;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+      height: 830px;
+    }
+    &-text{
+      max-height: 270px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      padding: 0 20px 0 50px;
+      @media screen and (max-width: 900px) {
+        padding-top: 150px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: -40px;
+        height: 400px;
+        padding-top: 10px;
+        justify-content: flex-end;
+      }
+      @media screen and (max-width: 400px) {
+        padding-top: 150px;
+        margin-bottom: -50px;
+      }
+      h3{
+        color: #ffffff;
+        font-size: 38px;
+        @media screen and (max-width: 768px) {
+          font-size: 30px;
+          margin-top: 0;
+        }
+      }
+      p{
+        font-size: 18px;
+        color: #757575;
+        line-height: 38px;
+        max-width: 600px;
+        @media screen and (max-width: 768px) {
+          font-size: 15px;
+          padding: 0 20px 0 0;
+        }
+      }
+    }
+    &-right{
+      width: 50%;
+      @media screen and (max-width: 900px) {
+        position: absolute;
+        top: -20%;
+        right: 0;
+      }
+      @media screen and (max-width: 768px) {
+        order: -1;
+        width: 100%;
+        max-width: 717px;
+        position: static;
+        padding: 0 50px;
+        margin: 40px 0 0 0;
+      }
+      .kar-slick{
+        img{
+          width: 100%;
+          height: 100%;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .slick-active{
+        margin: 0;
+      }
+      .arrow-left{
+        position: absolute;
+        bottom: 5%;
+        right: 20%;
+        @media screen and (max-width: 900px) {
+          bottom: -140%;
+          right: 21%;
+        }
+      }
+      .arrow-right{
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        @media screen and (max-width: 900px) {
+          bottom: -140%;
+        }
+      }
+    }
+    .dots-karusel{
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      background: #000000;
+      list-style-type: none;
+      position: absolute;
+      bottom: 3%;
+      left: -72%;
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+      #slick-slide-control00,
+      #slick-slide-control01,
+      #slick-slide-control02{
+        background: #000000;
+        color: #757575;
+        padding: 20px 0;
+        margin: 0 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .slick-active{
+        margin-top: -1px;
+        color: #ffffff;
+        border-top: 1px solid #ffffff;
+        button{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+

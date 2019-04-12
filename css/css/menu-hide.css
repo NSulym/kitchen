@@ -1,0 +1,158 @@
+.burger-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  top: 25px;
+  left: 10px;
+  visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+  .burger-btn {
+    visibility: visible;
+    z-index: 99;
+  }
+}
+.burger-btn span {
+  width: 25px;
+  height: 4px;
+  background: grey;
+  margin-top: 4px;
+}
+
+.burger-menu {
+  max-height: 80px;
+  height: 100%;
+  margin-top: -80px;
+}
+.burger-menu .navigations {
+  height: 1000px;
+  margin: 0;
+  padding-left: 10px;
+  background: black;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+  .burger-menu .navigations {
+    visibility: visible;
+    z-index: 100;
+  }
+}
+.burger-menu .hide-menu {
+  left: -1000px;
+  transition: all 0.5s;
+}
+.burger-menu ul {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.burger-menu ul li {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  white-space: nowrap;
+  padding: 20px 0 20px 20px;
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 700;
+}
+.burger-menu ul li .line {
+  width: 100%;
+  margin: 0 45px 0 15px;
+  border-bottom: 1px solid #ffffff;
+}
+.burger-menu ul li .earth {
+  margin: 8px 18px;
+}
+.burger-menu ul li .close {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.burger-menu ul .row-home {
+  padding: 0 0 0 20px;
+}
+.burger-menu ul .row-blog {
+  padding: 15px 0 0 20px;
+}
+.burger-menu ul .block-cabinets {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-cabinets .cabinets {
+  margin: 20px 0 0 30px;
+  color: #777;
+  font-size: 18px;
+}
+.burger-menu ul .block-cabinets--active {
+  height: 100px;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-inspiration {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-inspiration .inspiration {
+  margin: 20px 0 0 30px;
+  color: #777;
+  font-size: 18px;
+}
+.burger-menu ul .block-inspiration--active {
+  height: 100px;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-dealers {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-dealers .dealers {
+  margin: 20px 0 0 30px;
+  color: #777;
+  font-size: 18px;
+}
+.burger-menu ul .block-dealers--active {
+  height: 100px;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-about {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.burger-menu ul .block-about .about {
+  margin: 20px 0 0 30px;
+  color: #777;
+  font-size: 18px;
+}
+.burger-menu ul .block-about--active {
+  height: 200px;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=menu-hide.css.map */

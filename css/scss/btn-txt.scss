@@ -1,0 +1,45 @@
+.btn-txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  font-size: 32px;
+  .button-text{
+    text-align: center;
+    p{
+      padding-bottom: 40px;
+      font-size: 1.1em;
+      font-family: "Lora", serif;
+      @media screen and (max-width: 768px) {
+        font-size: 0.8em;
+      }
+    }
+    button{
+      padding: 15px 30px;
+      border: 2px solid #000000;
+      background: #ffffff;
+      letter-spacing: 2px;
+      outline: none;
+      color: #000104;
+      font-size: 0.4em;
+      transition: all .5s;
+      @media screen and (max-width: 768px) {
+        padding: 10px 20px;
+        letter-spacing: 1.5px;
+        font-size: 0.3em;
+      }
+      &:hover{
+        background: #000000;
+        color: #ffffff;
+        transition: all .5s;
+        a{
+          color: #ffffff;
+        }
+      }
+      a{
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}

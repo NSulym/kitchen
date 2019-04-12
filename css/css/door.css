@@ -1,0 +1,74 @@
+.door {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.door .con-door-text {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 10px;
+  font-family: "Lora", serif;
+}
+@media screen and (max-width: 768px) {
+  .door .con-door-text {
+    min-height: 200px;
+    align-items: center;
+    letter-spacing: 2px;
+  }
+}
+.door .con-door-text::before {
+  content: "";
+  width: 50px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 560px) {
+  .door .con-door-text::before {
+    width: 30px;
+  }
+}
+.door .con-door-text::after {
+  content: "";
+  width: 50px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 560px) {
+  .door .con-door-text::after {
+    width: 30px;
+  }
+}
+.door .con-door-door {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .door .con-door-door {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .door .con-door-door {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.door .con-door-door .doors {
+  padding: 0 20px 40px 20px;
+}
+.door .con-door-door .doors img {
+  width: 100%;
+}
+.door .con-door-door .doors p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=door.css.map */
