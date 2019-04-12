@@ -1,0 +1,35 @@
+.karusel-clients{
+  min-height: 270px;
+  font-size: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/background.png);
+  h3{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 5px 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-family: "Oswald", sans-serif;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+      padding-bottom: 30px;
+    }
+  }
+  .karusel-client{
+    .slick-slide{
+      &:focus{
+        outline: none;
+      }
+      padding: 0 3%;
+      a{
+        svg{
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

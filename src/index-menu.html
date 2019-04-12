@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/index-menu.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="container navbar navbar-expand-md nav-custom">
+    <img src="img/emblem.png" alt="w">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link5</a></li>
+            <li><button><a class="btn" href="#"><i class="fa fa-phone"></i>Order a call</a></button></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script>
+    $('.navbar-toggler').click(function(){
+        var hasClass = $('.navbar-collapse').hasClass("menu-fixed")
+        if (!hasClass){
+            $('.navbar-collapse').addClass("menu-fixed")
+            document.getElementsByClassName('navbar-collapse').classList.add()
+        } else {
+            setTimeout(function(){
+                $('.navbar-collapse').removeClass("menu-fixed")
+            },500)
+        }
+    });
+</script>
+
+
+
+</body>
+</html>

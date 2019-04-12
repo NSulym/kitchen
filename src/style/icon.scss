@@ -1,0 +1,31 @@
+.icon-phone{
+  width: 1em;
+  height: 1em;
+  color: #61b300;
+  margin: -4px 10px 0 -5px;
+}
+.icon-advantages{
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.karusel-icon{
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  color: #ffffff;
+  &:hover{
+    transition: all 0.5s;
+    transform: scale(1.3);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.footer-icon{
+  width: 21px;
+  height: 21px;
+  color: #ffffff;
+  padding: 0 7px 4px 0;
+}

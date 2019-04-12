@@ -1,0 +1,58 @@
+.container-work{
+  min-height: 700px;
+  padding: 0;
+  margin: -8px 0;
+  font-size: 30px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/backg.png);
+  @media screen and (max-width: 1200px) {
+    background-position: right 50% top;
+  }
+  @media screen and (max-width: 576px) {
+    background-position: right 35% top;
+  }
+  h3{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    padding-top: 40px;
+    color: #61b300;
+    font-size: 1.7em;
+    font-family: "Oswald", sans-serif;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+ .col-sm-4{
+   padding-top: 60px;
+   @media screen and (max-width: 576px) {
+     padding: 20px 30px 0 30px;
+
+   }
+  &:last-child{
+    background-position: 98% 6%;
+    background-repeat: no-repeat;
+    background-image: url(../img/peas.svg);
+    @media screen and (max-width: 576px) {
+      padding-top: 0;
+      background-image: none;
+    }
+  }
+   p {
+     font-size: 14px;
+     @media screen and (max-width: 768px) {
+       font-size: 12px;
+     }
+    span{
+      margin-left: -16px;
+      color: #61b300;
+      font-size: 30px;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+   }
+ }
+}
